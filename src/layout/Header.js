@@ -99,7 +99,7 @@ const Header = () => {
                   data-bs-toggle="dropdown"
                 >
                   <i className="ci-menu align-middle mt-n1 me-2" />
-                  Categories
+                  Categoriese
                 </a>
                 <ul className="dropdown-menu py-1">
                   <li className="dropdown">
@@ -546,6 +546,27 @@ const Header = () => {
               <li className="nav-item">
                 <Link className="nav-link" href="/products">
                    Products
+                </Link>
+              </li>
+            </ul>
+            <ul className="navbar-nav">
+              <li className="nav-item">
+                <Link className="nav-link" href="/cart">
+                   Cart
+                </Link>
+              </li>
+            </ul>
+             <ul className="navbar-nav">
+              <li className="nav-item">
+                <Link className="nav-link" href="/checkout">
+                   Checkout
+                </Link>
+              </li>
+            </ul>
+              <ul className="navbar-nav">
+              <li className="nav-item">
+                <Link className="nav-link" href="/login">
+                   Login
                 </Link>
               </li>
             </ul>
