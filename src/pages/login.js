@@ -1,15 +1,16 @@
 import Layout from "@/layout/Layout"
-import Auth from "@/layout/Authentication"
+import Auth from "@/layout/auth"
 import Login from "@/components/home/login"
+import Signin from "@/components/home/signin"
+
 
 const login = () => {
 	return (
-		<Layout>
-		  <div className="container pb-5 mb-2 mb-md-4">
-            <Login />
-        </div>
-		</Layout>
-		)
-}
+	 <Auth>
+		<Login />
+		<Signin />
+	  </Auth>
+ );
+};
 
-export default login
+export default login;

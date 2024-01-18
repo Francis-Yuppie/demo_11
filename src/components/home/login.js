@@ -1,74 +1,29 @@
-import React from 'react'
-import Auth from '@/layout/Authentication'
-
-const Login = () => {
+const login = () => {
 	return (
-		  <div className="container pb-5 mb-2 mb-md-4">
-             <form
-              className="needs-validation tab-pane fade show active"
-              autoComplete="off"
-              noValidate=""
-              id="signin-tab"
-            >
-              <div className="mb-3">
-                <label className="form-label" htmlFor="si-email">
-                  Email address
-                </label>
-                <input
-                  className="form-control"
-                  type="email"
-                  id="si-email"
-                  placeholder="johndoe@example.com"
-                  required=""
-                />
-                <div className="invalid-feedback">
-                  Please provide a valid email address.
-                </div>
+		<form class="needs-validation tab-pane fade show active" autocomplete="off" novalidate id="signin-tab">
+          <div class="mb-3">
+              <label class="form-label" for="si-email">Email address</label>
+                <input class="form-control" type="email" id="si-email" placeholder="johndoe@example.com" required/>
+                <div class="invalid-feedback">Please provide a valid email address.</div>
               </div>
-              <div className="mb-3">
-                <label className="form-label" htmlFor="si-password">
-                  Password
-                </label>
-                <div className="password-toggle">
-                  <input
-                    className="form-control"
-                    type="password"
-                    id="si-password"
-                    required=""
-                  />
-                  <label
-                    className="password-toggle-btn"
-                    aria-label="Show/hide password"
-                  >
-                    <input className="password-toggle-check" type="checkbox" />
-                    <span className="password-toggle-indicator" />
+              <div class="mb-3">
+                <label class="form-label" for="si-password">Password</label>
+                <div class="password-toggle">
+                  <input class="form-control" type="password" id="si-password" required/>
+                  <label class="password-toggle-btn" aria-label="Show/hide password">
+                    <input class="password-toggle-check" type="checkbox"/><span class="password-toggle-indicator"></span>
                   </label>
                 </div>
               </div>
-              <div className="mb-3 d-flex flex-wrap justify-content-between">
-                <div className="form-check mb-2">
-                  <input
-                    className="form-check-input"
-                    type="checkbox"
-                    id="si-remember"
-                  />
-                  <label className="form-check-label" htmlFor="si-remember">
-                    Remember me
-                  </label>
-                </div>
-                <a className="fs-sm" href="#">
-                  Forgot password?
-                </a>
+              <div class="mb-3 d-flex flex-wrap justify-content-between">
+                <div class="form-check mb-2">
+                  <input class="form-check-input" type="checkbox" id="si-remember"/>
+                  <label class="form-check-label" for="si-remember">Remember me</label>
+                </div><a class="fs-sm" href="#">Forgot password?</a>
               </div>
-              <button
-                className="btn btn-primary btn-shadow d-block w-100"
-                type="submit"
-              >
-                Sign in
-              </button>
-            </form>
-		  </div>
-		)
+              <button class="btn btn-primary btn-shadow d-block w-100" type="submit">Sign in</button>
+      </form>
+	)
 }
 
-export default Login;
+export default login;
